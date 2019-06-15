@@ -1,7 +1,7 @@
 # elearning
 Here's the possible requests:
 
-"{[/viewAllUsers],methods=[POST],consumes=[application/json],produces=[application/json]}" 
+{[/viewAllUsers],methods=[POST],consumes=[application/json],produces=[application/json]}
 {[/StudentService/listCoursesOfStudent/{studentName}],methods=[GET],produces=[application/json]
 /StudentService/createStudent],methods=[POST],consumes=[application/json],produces=[application/json]}
 [/StudentService/createCourse],methods=[POST],consumes=[application/json],produces=[application/json]}"
@@ -11,7 +11,7 @@ Here's the possible requests:
 
 
 Kindy use 
-username: mostafa
+username: most
 password: password
 
 or simple using the endpoint /signup to create new user
