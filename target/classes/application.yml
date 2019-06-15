@@ -1,0 +1,13 @@
+# Spring LDAP - CRUD Operations Binding and Unbinding
+
+spring:
+  ldap:
+    embedded:
+      base-dn: dc=ldap,dc=com
+      credential:
+        username: uid=admin
+        password: secret
+      port: 12345
+      validation:
+        enabled: false
+    

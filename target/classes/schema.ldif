@@ -1,0 +1,49 @@
+dn: dc=ldap,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: ldap
+
+dn: ou=groups,dc=ldap,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=ldap,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+
+dn: uid=john,ou=people,dc=ldap,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Doe
+uid: john
+userPassword: {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=
+
+dn: uid=most,ou=people,dc=ldap,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: most
+uid: most
+userPassword: {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=
+
+dn: cn=developers,ou=groups,dc=ldap,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: developers
+ou: developer
+uniqueMember: uid=john,ou=people,dc=ldap,dc=com
+
+dn: cn=managers,ou=groups,dc=ldap,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: managers
+ou: manager
+uniqueMember: uid=john,ou=people,dc=ldap,dc=com
+

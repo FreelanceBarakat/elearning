@@ -1,0 +1,9 @@
+
+dn: uid= mostafad212,ou=people,dc=ldap,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: John Doe
+uid: mostafad212
+userPassword: password
