@@ -1,15 +1,49 @@
 # elearning
-Here's the possible requests:
+Here's the Sample possible requests:
 
-{[/viewAllUsers],methods=[POST],consumes=[application/json],produces=[application/json]}
-{[/StudentService/listCoursesOfStudent/{studentName}],methods=[GET],produces=[application/json]
-/StudentService/createStudent],methods=[POST],consumes=[application/json],produces=[application/json]}
-[/StudentService/createCourse],methods=[POST],consumes=[application/json],produces=[application/json]}"
- "{[/StudentService/registerCourse],methods=[POST],consumes=[application/json],produces=[application/json]}
-"{[/StudentService/unRegisterCourse],methods=[POST],consumes=[application/json],produces=[application/json]}
-{[/StudentService/listAllCourses],methods=[GET],produces=[application/json]}"
+Post:
+body: empty
+url: http://localhost:8080/viewAllUsers 
+
+Post:
+http://localhost:8080/StudentService/createCourse
+{
+	"courseName": "mathads",
+	 "description": "firstg coursfe ",
+	 "instructor": "ahmed",
+     "publishDate": "2019/1/1",
+	 "totalHours":10
+}
+
+Post:
+http://localhost:8080/StudentService/unRegisterCourse
+{
+	"courseName": "maths",
+	"studentName":"mostafa"
+}
+
+Post:
+http://localhost:8080/StudentService/createStudent
+{
+	"email":"email",
+	"name":"mostafa2",
+	"userPassword": "USERPASSWORD",
+	"gender": "mail",
+	"DOB": "2910"
+}
+
+Get:
+http://localhost:8080/StudentService/listCoursesOfStudent/mostafa2
 
 
+Post:
+http://localhost:8080/StudentService/registerCourse
+{
+	"courseName": "maths",
+	"studentName":"mostafa"
+}
+
+registerCourse
 Kindy use 
 username: most
 password: password
